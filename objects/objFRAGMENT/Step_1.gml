@@ -96,6 +96,6 @@ if (vspeed >= 4) {
 	vspeed = 4
 	}
 
-if (y >= 640) {
+if (y >= 1440) {
 instance_destroy()
 }

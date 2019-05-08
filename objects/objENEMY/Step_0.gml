@@ -3,12 +3,12 @@
 /// @description STATE BASED AI
 if (path_index = -1) {
 		if (behavior = "Stop and Stare") {
-	if (state = "Off_Screen") && (y >= -1) {
+	if (state = "Off_Screen") && (y >= -200) {
 	state = "On_Screen"	
 	instance_create_depth(x, 40, depth, objTHREAT)	
 	var x_init = x
-	var y_stop_and_stare = 480
-	var leave_area = -1200
+	var y_stop_and_stare = 770
+	var leave_area = -1600
 	var stop_and_stare = path_add();
 	path_insert_point(stop_and_stare, 0, x_init, -100, 100);
 	path_insert_point(stop_and_stare, 1, x_init, y_stop_and_stare, 10);
@@ -23,13 +23,13 @@ if (path_index = -1) {
 	}
 	
 	if (behavior = "Line Down 180") {	
-	if (state = "Off_Screen") && (y >= -1) {
+	if (state = "Off_Screen") && (y >= -200) {
 	state = "On_Screen"	
 	instance_create_depth(x, 40, depth, objTHREAT)	
 	image_blend = make_colour_hsv(0, (irandom_range(0,10)), (irandom_range(255,255)));
 	var x_init = x //random_range(120,360)
 	var y_init = y
-	var leave_area = 1200
+	var leave_area = 1600
 	var directed_attack = path_add();
 
 	path_set_precision(directed_attack, 2);
@@ -53,7 +53,7 @@ if (path_index = -1) {
 	
 	
 	if (behavior = "Line Down 0") {
-	if (state = "Off_Screen") && (y >= -1) {
+	if (state = "Off_Screen") && (y >= -200) {
 	state = "On_Screen"	
 	instance_create_depth(x, 40, depth, objTHREAT)	
 	image_angle = 90
@@ -63,7 +63,7 @@ if (path_index = -1) {
 		image_yscale = 2.25
 	var x_init = x //random_range(20,460)
 	var y_init = y
-	var leave_area = 1200
+	var leave_area = 1600
 	var directed_attack = path_add();
 
 	path_set_precision(directed_attack, 7);
@@ -86,7 +86,7 @@ if (path_index = -1) {
 	}
 
 if (behavior = "Across From Right") {
-	if (state = "Off_Screen")  && (y >= -1) {
+	if (state = "Off_Screen")  && (y >= -200) {
 		instance_create_depth(440, 200, depth, objTHREAT)	
 	x = 800;
 	state = "On_Screen";
@@ -98,9 +98,9 @@ if (behavior = "Across From Right") {
 	}
 	
 	if (behavior = "Diagonal Across From Right") {
-	if (state = "Off_Screen")  && (y >= -1) {
+	if (state = "Off_Screen")  && (y >= -200) {
 	x = 620;
-	y = 700;
+	y = 1600;
 	state = "On_Screen";
 	image_angle = 90;
 	hspeed = -3;
@@ -110,9 +110,9 @@ if (behavior = "Across From Right") {
 	}
 	
 	if (behavior = "Diagonal Across From Left") {
-	if (state = "Off_Screen")  && (y >= -1) {
+	if (state = "Off_Screen")  && (y >= -200) {
 	x = -180;
-	y = 700;
+	y = 1600;
 	state = "On_Screen";
 	image_angle = 90;
 	hspeed = 3;
@@ -122,23 +122,23 @@ if (behavior = "Across From Right") {
 	}
 	
 	if (behavior = "Across From Left") {
-	if (state = "Off_Screen") && (y >= -1) {
+	if (state = "Off_Screen") && (y >= -200) {
 	state = "On_Screen";
 	x = -160;
 	image_angle = 0;
 	hspeed = 3;
-	vspeed = 2;
-	instance_create_depth(40, 100, depth, objTHREAT)	
+	vspeed = 1;
+	//instance_create_depth(40, 100, depth, objTHREAT)	
 	}
 	}
 	
 	if (behavior = "From Behind") {
 	if (state = "Off_Screen") && (y >= -1) {
-	y = 800;
+	y = 1600;
 	state = "On_Screen";
-	instance_create_depth(x, 600, depth, objTHREAT)	
+	instance_create_depth(x, 1400, depth, objTHREAT)	
 	image_angle = 90;
-	vspeed = -0.5;
+	vspeed = -2;
 	}
 	}
 
@@ -168,7 +168,7 @@ if (behavior = "Across From Right") {
 }
 
 
-if (y <= 630) {
+if (y >= -40) {
 	if instance_exists(objPLAYER) {
 	var distance_player = distance_to_object(objPLAYER) 
 	if (fired = true) {
@@ -211,11 +211,11 @@ instance_destroy()
 Powerup_Generator(score_tally,"Air")
 }
 
-if (y <= -2250) {
+if (y <= -1440) {
 	instance_destroy()
 	}
 	
-	if (y >= 2250) {
+	if (y >= 1641) {
 	instance_destroy()
 	}
 	

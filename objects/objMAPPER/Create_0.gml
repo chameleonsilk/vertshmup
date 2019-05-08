@@ -5,6 +5,6 @@ vspeed = 1
 new_logic = true
 
 
-global.grid = mp_grid_create(0, 0, 24, 32, 20, 20);	
-mp_grid_add_instances(global.grid, objENEMY, true);
-mp_grid_add_instances(global.grid, objENEMYPROJECTILE, true);
+//global.grid = mp_grid_create(0, 0, 24, 32, 20, 20);	
+//mp_grid_add_instances(global.grid, objENEMY, true);
+//mp_grid_add_instances(global.grid, objENEMYPROJECTILE, true);

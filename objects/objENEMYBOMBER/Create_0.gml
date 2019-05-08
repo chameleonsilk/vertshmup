@@ -63,7 +63,7 @@ audio_play_sound(BossM, 1, true)
 }
 	
 		
-Ultimate_Turret_Gen(objENEMYBOMBER, objTURRET, SpriteTAILTURRET1,  x, y + 185, -900, sway, 1, path_action_reverse,false,1,"SPIN",2, true, true);		
+Ultimate_Turret_Gen(objENEMYBOMBER, objTURRET, SpriteTAILTURRET1,  x, y + 585, -900, sway, 1, path_action_reverse,false,1,"SPIN",2, true, true);		
 Ultimate_Turret_Gen(objENEMYBOMBER, objTURRET, SpriteTAILTURRET1,  x + 80, y + 40, -900, sway, 1, path_action_reverse,false,1,"SPIN",2, true, true);		
 Ultimate_Turret_Gen(objENEMYBOMBER, objTURRET, SpriteTAILTURRET1,  x - 80, y + 40, -900, sway, 1, path_action_reverse,false,1,"SPIN",2, true, true);		
 Ultimate_Turret_Gen(objENEMYBOMBER, objTURRET, SpriteTAILTURRET1,  x - 205, y + 105, -900, sway, 1, path_action_reverse,false,1,"SPIN",2, true, true);		

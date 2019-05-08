@@ -52,8 +52,8 @@ for (next_line_down = 0; next_line_down < screen_vertical_max;)
 		if (next_line_down = screen_vertical_max) {	
 					if (next_line_down = screen_vertical_max) {	
 		//	
-		next_enemy_queue = file_text_read_string(datafile);
-		file_text_readln(datafile);	
+		next_enemy_queue = file_text_read_string(enemyfile);
+		file_text_readln(enemyfile);	
 		
 		}
 		}

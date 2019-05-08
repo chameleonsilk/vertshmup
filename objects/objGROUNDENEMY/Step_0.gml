@@ -11,7 +11,7 @@ if (path_index = -1) {
 		vspeed = 1
 	var x_init = x //random_range(20,460)
 	var y_init = y
-	var leave_area = 1200
+	var leave_area = 1600
 	var scroll = path_add();
 
 	path_set_precision(scroll, 7);
@@ -42,7 +42,7 @@ if (behavior = "Sub") {
 	//image_speed = 4
 	var x_init = x //random_range(20,460)
 	var y_init = y
-	var leave_area = 1200
+	var leave_area = 1600
 	var scroll = path_add();
 
 	path_set_precision(scroll, 7);
@@ -90,7 +90,7 @@ if (behavior = "Sub") {
 	image_speed = 4
 	var x_init = x //random_range(20,460)
 	var y_init = y
-	var leave_area = 1200
+	var leave_area = 1600
 	var scroll = path_add();
 
 	path_set_precision(scroll, 7);
@@ -117,7 +117,7 @@ if (behavior = "Sub") {
 	state = "On_Screen"	
 	var x_init = x //random_range(20,460)
 	var y_init = y
-	var leave_area = 1200
+	var leave_area = 1600
 	var scroll = path_add();
 
 	path_set_precision(scroll, 7);
@@ -198,6 +198,10 @@ Powerup_Generator(score_tally,"Ground")
 }
 
 if (y <= -1250) {
+	instance_destroy()
+	}
+	
+	if (y >= 1600) {
 	instance_destroy()
 	}
 	

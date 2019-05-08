@@ -65,7 +65,7 @@ globalvar beep;
 globalvar extended;
 globalvar transition;
 globalvar wing_set;
-globalvar tile_data;
+//globalvar tile_data;
 globalvar obj_data;
 globalvar enemy_data;
 globalvar tile_to_draw;

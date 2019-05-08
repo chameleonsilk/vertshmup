@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if (new_logic = true){
 new_logic = false
-Load_Data_Matrix_huh("stage_0.txt", 720)	
+Load_Data_Matrix_huh("stage_0.txt", 1440)	
 Load_Data_Matrix("stage_0.txt", 0)
 if (stage = 0) {
 	//next_map_queue = "stage_0.txt"

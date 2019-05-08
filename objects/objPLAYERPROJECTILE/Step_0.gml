@@ -62,7 +62,7 @@ if (y <= 40) {
 instance_destroy()	
 }
 
-if (x >= 960) {
+if (x >= 481) {
 instance_destroy()	
 }
 
